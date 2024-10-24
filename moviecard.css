@@ -1,0 +1,32 @@
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.movie-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 300px;
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s;
+}
+
+.movie-poster {
+  width: 100%;
+}
+
+.movie-title {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.movie-rating {
+  color: gray;
+  margin-bottom: 10px;
+}

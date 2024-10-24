@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영화 검색</title>
+    <link rel="stylesheet" href="search.css" />
+    <link rel="stylesheet" href="modal.css" />
+    <link rel="stylesheet" href="moviecard.css" />
+</head>
+
+<body>
+
+    <div class="search-container">
+        <h1>영화 검색</h1>
+        <input type="text" id="search-box" placeholder="영화를 검색하세요...">
+        <button class="bookMark">북마크 보기</button>
+    </div>
+    <div id="movie-container" class="movie-grid">
+    </div>
+    <div id="movie-modal">
+        <div class="modal-content">
+            <button class="modal-close">X</button>
+            <h2 class="modal-title"></h2>
+            <img class="modal-poster" src="" alt="Movie Poster" />
+            <p class="modal-overview"></p>
+            <p class="modal-release-date"></p>
+            <p class="model-rating"></p>
+        </div>
+    </div>
+
+    <script type="module" src="index.js"></script>
+    <script type="module" src="./ui.js"></script>
+    <script type="module" src="./api.js"></script>
+</body>
